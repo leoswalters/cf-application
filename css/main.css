@@ -1,0 +1,459 @@
+/*! HTML5 Boilerplate v5.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p,
+a, em, img, strong, b, u, i, center, ul, li, form, label,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, figure, figcaption, footer, header, hgroup, nav, section,
+time {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+    margin-top:25px;
+}
+
+header {
+    margin:25px 0 10px 0;
+    height:100px;
+    border-bottom: solid 20px grey;
+    -webkit-border-image:url(../img/horizontal_border.png) 30 30 round; /* Safari 3.1-5 */
+    -o-border-image:url(../img/horizontal_border.png) 30 30 round; /* Opera 11-12.1 */
+    border-image:url(../img/horizontal_border.png) 30 30 round;
+}
+
+header img {
+    float:left;
+    padding:0 10px 15px 0;
+}
+
+header h1 {
+    float:left;
+    margin:-2px 0 -15px -5px;
+    font-family: 'Yellowtail', cursive;
+    font-size: 36px;
+}
+
+header h2 {
+    padding:33px 0 0 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+    color:#888888   ;
+    text-transform: uppercase;
+    margin:0;
+}
+
+.share-icons {
+    float:right;
+    margin-top:10px;
+}
+
+.share-icons img {
+    padding:0 0 0 3px;
+    margin:0;
+}
+
+.share-icons ul {
+    margin:0px;
+}
+
+.share-icons li {
+    display:inline;
+    padding:0 0 0 -10px;
+}
+
+li:nth-child(7) img {
+    padding-left:10px;
+}
+
+article h1 {
+    font-family:'Oswald', sans-serif;
+    font-weight:bold;
+    font-size:2em;
+    margin:30px 0 -20px 0px;
+}
+
+article h2 {
+    font-family: 'Droid Serif', serif;
+    font-size:1em;
+    color:#595959;
+    padding:15px 0 10px 0;
+}
+
+.post-time-stamp {
+    font-family:'Oswald', sans-serif;
+    text-transform:uppercase;
+    font-weight:lighter;
+    color:#b8b8b8;
+    font-size:0.75em;
+    margin:15px 0 0 0;
+    letter-spacing: 1px;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.print-icon {
+    width:100%;
+}
+
+
+.print-icon img{
+    display:inline;
+    float:right;
+    margin:74px -15px 0 0;
+    width:13px;
+    height:10px;
+}
+
+.print-icon p{
+    font-family:'Oswald', sans-serif;
+    text-transform:uppercase;
+    font-weight:lighter;
+    color:#b8b8b8;
+    font-size:0.75em;
+    display:inline;
+    float:right;
+    margin:70px 0 0 0;
+}
+
+
+.article-image {
+    width:100%;
+    margin:20px 0 0 0;
+}
+
+article p {
+    font-family: 'Droid Serif', serif;
+    text-indent:1.5em;
+    margin:15px 0 20px 0;
+    font-size:1em;
+    color:#878787;
+    font-weight:normal;
+    line-height:1.5em;
+}
+
+.ruled-paper {
+    height:300px;
+    background-image: url(../img/list-bg.png);
+    background-repeat:no-repeat;
+    width:100%;
+    background-size: cover;
+}
+
+.ingredients-left-side {
+    font-family:'Patrick Hand', cursive;
+    font-size:1.40em;
+    font-weight:lighter;
+    color:#939393;
+    margin:40px 0 0px 75px;
+    /*height:325px; */
+    line-height: 1.50em;
+}
+
+.ingredients-right-side {
+    font-family:'Patrick Hand', cursive;
+    font-size:1.40em;
+    font-weight:lighter;
+    color:#939393;
+    margin:40px 0 0px 0px;
+    /*height:325px;*/
+    line-height: 1.50em;
+}
+
+.author-section {
+    border-top: solid 20px grey;
+    -webkit-border-image:url(../img/horizontal_border.png) 30 30 round; /* Safari 3.1-5 */
+    -o-border-image:url(../img/horizontal_border.png) 30 30 round; /* Opera 11-12.1 */
+    border-image:url(../img/horizontal_border.png) 30 30 round;
+    padding-top:30px;
+    margin-top:20px;
+}
+
+.author {
+    font-family:'Droid Serif', serif;
+}
+
+.author img {
+    display:inline-block;
+    float:left;
+    margin:0 20px 0 0;
+}
+
+.author h2 {
+    display:inline-block;
+    float:left;
+    font-size:1.25em;
+    font-weight: normal;
+    padding:0;
+}
+
+.author h6 {
+    display:inline-block;
+    font-size:0.95em;
+    color:#595959;
+    float:left;
+    padding:0;
+    width:90%;
+    line-height: 1.50em;
+    margin:-40px 0 0 90px;
+}
+
+
+.author button {
+    font-family:'Oswald', sans-serif;
+    background-color:#bc7058;
+    text-transform: uppercase;
+    font-weight:lighter;
+    height:50px;
+    width:180px;
+    color:#fff;
+    border:none;
+    letter-spacing: 0.5px;
+    display:inline-block;
+    float:right;
+    margin:5px 0 0 0;
+    border-radius: 0;
+}
+
+.footer-content {
+    font-family:'Droid Serif', serif;
+    font-size:.85em;
+    color:#AAADB7;
+    text-align:center;
+    letter-spacing: 0.25px;
+    border-top: 1px solid #e2e2e2;
+    margin-top:65px;
+}
+
+footer img {
+    margin:-20px 5px 20px 5px;
+    padding:0 10px 0 10px;
+    background-color: white;
+    z-index: 10;
+}
+
+footer p {
+    margin:10px 0 0 0;
+}
+
