@@ -1,0 +1,3 @@
+[submodule "cf-application"]
+	path = cf-application
+	url = https://github.com/leoswalters/cf-application
