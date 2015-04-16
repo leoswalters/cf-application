@@ -1,0 +1,27 @@
+
+body {
+    margin:2em 0 2em 0;
+}
+
+header {
+    margin:0;
+    min-height:6em;
+    border-bottom: solid 1.25em grey;
+    -webkit-border-image:url(../img/horizontal_border.png) 30 30 round; /* Safari 3.1-5 */
+    -o-border-image:url(../img/horizontal_border.png) 30 30 round; /* Opera 11-12.1 */
+    border-image:url(../img/horizontal_border.png) 30 30 round;
+}
+
+article {
+    font-family: 'Droid Serif', serif;
+    color:#000;
+
+}
+
+footer {
+    font-family:'Droid Serif', serif;
+    font-size:.85em;
+    color:#AAADB7;
+    text-align:center;
+    letter-spacing: 0.25px;
+}
